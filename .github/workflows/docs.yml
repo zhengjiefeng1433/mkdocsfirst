@@ -42,3 +42,5 @@ jobs:
         with:
           sitemap-location: 'https://wcowin.work/sitemap.xml'
           key: ${{ secrets.INDEXNOW_KEY }}
+      - run: pip install mkdocs-material 
+      - run: mkdocs gh-deploy --force
