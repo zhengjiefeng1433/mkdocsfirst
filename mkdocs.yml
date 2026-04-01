@@ -1,4 +1,42 @@
 site_name: My site
 site_url: https://mydomain.org/mysite
+site_description: 图案资源与设计参考文档
+
+nav:
+  - 首页: index.md
+  - 分类检索:
+    - 检索总览: classification/index.md
+    - 按时代: classification/era.md
+    - 按地域: classification/region.md
+    - 按类别: classification/category.md
+    - 按工艺: classification/craft.md
+  - 机构资源: institutions.md
+  - 关于: about.md
+
 theme:
   name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.instant
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+
+plugins:
+  - search

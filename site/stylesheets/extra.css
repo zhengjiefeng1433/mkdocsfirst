@@ -1,0 +1,224 @@
+:root {
+  --md-primary-fg-color: #8f1d22;
+  --md-primary-fg-color--light: #ab2c31;
+  --md-primary-fg-color--dark: #6f1519;
+  --md-accent-fg-color: #b5442a;
+
+  --cn-bg: #f4efe3;
+  --cn-bg-soft: #efe6d5;
+  --cn-paper: #fbf7ee;
+  --cn-ink: #2e2925;
+  --cn-muted: #73685d;
+  --cn-red: #8f1d22;
+  --cn-border: #d2c3aa;
+}
+
+body {
+  color: var(--cn-ink);
+  background:
+    radial-gradient(circle at 10% -10%, #ffffff90 0%, #ffffff00 45%),
+    radial-gradient(circle at 95% 0%, #e6d8bf66 0%, #e6d8bf00 42%),
+    var(--cn-bg);
+}
+
+.md-header {
+  background: linear-gradient(90deg, #7b171c 0%, #8f1d22 50%, #a32a2e 100%);
+  box-shadow: 0 10px 26px #4510102e;
+}
+
+.md-main {
+  background: transparent;
+}
+
+.md-content {
+  background: transparent;
+}
+
+.md-main__inner {
+  background: #f8f1e4d9;
+  border: 1px solid #e3d5be;
+  border-radius: 14px;
+  padding: 0.6rem 0.8rem;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  color: var(--cn-ink);
+  letter-spacing: 0.01em;
+}
+
+.hero-block {
+  margin: 0 0 1.8rem;
+  padding: 2rem 1.4rem;
+  border: 1px solid var(--cn-border);
+  border-radius: 14px;
+  background:
+    linear-gradient(180deg, #fffaf0 0%, #f5ecdc 100%);
+  box-shadow: 0 14px 30px #5a442018;
+}
+
+.hero-kicker {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  color: var(--cn-red);
+  font-weight: 700;
+}
+
+.hero-block h1 {
+  margin: 0.4rem 0 0.8rem;
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  margin: 0;
+  color: var(--cn-muted);
+  max-width: 62ch;
+  line-height: 1.75;
+}
+
+.subnav-strip {
+  margin: 0 0 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding: 0.7rem;
+  border: 1px solid var(--cn-border);
+  border-radius: 12px;
+  background: #fff7eb;
+}
+
+.subnav-strip a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.34rem 0.72rem;
+  border-radius: 999px;
+  color: var(--cn-ink);
+  border: 1px solid #d8c7ad;
+  text-decoration: none;
+  font-size: 0.86rem;
+  transition: all 160ms ease;
+}
+
+.subnav-strip a:hover {
+  color: #fff;
+  background: var(--cn-red);
+  border-color: var(--cn-red);
+}
+
+.pattern-banner {
+  margin: 0 0 1.6rem;
+  padding: 1rem 1rem 1.1rem;
+  border: 1px solid var(--cn-border);
+  border-radius: 12px;
+  background:
+    linear-gradient(#fff8eef0, #fff8eef0),
+    url("../assets/pattern-bg.svg") center / 180px 180px repeat;
+}
+
+.pattern-banner h2 {
+  margin: 0 0 0.35rem;
+  color: var(--cn-red);
+}
+
+.pattern-banner p {
+  margin: 0;
+  color: var(--cn-muted);
+}
+
+.filter-grid {
+  margin: 0 0 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.95rem;
+}
+
+.filter-card {
+  padding: 1rem 1rem 1.1rem;
+  border: 1px solid var(--cn-border);
+  border-radius: 12px;
+  background: var(--cn-paper);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.filter-card:hover {
+  transform: translateY(-3px);
+  border-color: #b49774;
+  box-shadow: 0 10px 20px #4b3b2317;
+}
+
+.filter-card h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.02rem;
+  color: var(--cn-red);
+}
+
+.filter-card p {
+  margin: 0;
+  color: var(--cn-muted);
+  line-height: 1.7;
+}
+
+.logo-grid {
+  margin: 0.8rem 0 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.logo-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.78rem;
+  border: 1px solid var(--cn-border);
+  border-radius: 12px;
+  background: #fffaf1;
+}
+
+.logo-card p {
+  margin: 0;
+  color: var(--cn-ink);
+  font-size: 0.9rem;
+}
+
+.logo-mark {
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(180deg, #a62e32, #7f1a1e);
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 10px;
+  border: 1px solid var(--cn-border);
+  background: #fffaf1;
+}
+
+@media (max-width: 900px) {
+  .filter-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-block {
+    padding: 1.35rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-grid {
+    grid-template-columns: 1fr;
+  }
+}
