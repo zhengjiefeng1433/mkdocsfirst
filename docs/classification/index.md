@@ -1,33 +1,76 @@
-# 分类检索
+# 朝代检索
 
 <section class="hero-block">
-  <p class="hero-kicker">ADVANCED FILTER</p>
-  <h1>分类检索总览</h1>
-  <p class="hero-subtitle">通过时代、地域、类别和工艺进行交叉筛选，快速定位图案参考。</p>
+  <p class="hero-kicker">DYNASTY SEARCH</p>
+  <h1>纹样目录（占位框架）</h1>
+  <p class="hero-subtitle">主导航已收敛为朝代检索。右侧页内目录将按下方纹样标题顺序自动生成，后续可直接替换成你的真实纹样条目。</p>
 </section>
 
-<nav class="subnav-strip">
-  <a href="era/">按时代</a>
-  <a href="region/">按地域</a>
-  <a href="category/">按类别</a>
-  <a href="craft/">按工艺</a>
+<nav class="era-chip-bar">
+  <a href="#paleolithic" class="is-active">旧石器时代</a>
+  <a href="#neolithic">新石器时代</a>
+  <a href="#xia-shang-zhou">夏商周</a>
+  <a href="#qin-han">秦汉</a>
+  <a href="#sui-tang-song-yuan">隋唐宋元</a>
+  <a href="#ming-qing-modern">明清近现代</a>
 </nav>
 
-<section class="filter-grid">
-  <article class="filter-card">
-    <h3>先选时代</h3>
-    <p>确定历史语境，避免风格混用。</p>
-  </article>
-  <article class="filter-card">
-    <h3>再选地域</h3>
-    <p>补充地方工艺与审美差异。</p>
-  </article>
-  <article class="filter-card">
-    <h3>叠加类别</h3>
-    <p>集中在纹样语义与构图方式。</p>
-  </article>
-  <article class="filter-card">
-    <h3>收敛工艺</h3>
-    <p>根据材料与制作方式锁定可落地参考。</p>
-  </article>
-</section>
+## 旧石器时代 {#paleolithic}
+
+### 纹样 001 占位
+载体：待补充  
+说明：用于放置旧石器时代纹样第一条记录。
+
+### 纹样 002 占位
+载体：待补充  
+说明：用于放置旧石器时代纹样第二条记录。
+
+## 新石器时代 {#neolithic}
+
+### 纹样 003 占位
+载体：待补充  
+说明：用于放置新石器时代纹样第一条记录。
+
+### 纹样 004 占位
+载体：待补充  
+说明：用于放置新石器时代纹样第二条记录。
+
+## 夏商周 {#xia-shang-zhou}
+
+### 纹样 005 占位
+载体：待补充  
+说明：用于放置夏商周纹样第一条记录。
+
+### 纹样 006 占位
+载体：待补充  
+说明：用于放置夏商周纹样第二条记录。
+
+## 秦汉 {#qin-han}
+
+### 纹样 007 占位
+载体：待补充  
+说明：用于放置秦汉纹样第一条记录。
+
+### 纹样 008 占位
+载体：待补充  
+说明：用于放置秦汉纹样第二条记录。
+
+## 隋唐宋元 {#sui-tang-song-yuan}
+
+### 纹样 009 占位
+载体：待补充  
+说明：用于放置隋唐宋元纹样第一条记录。
+
+### 纹样 010 占位
+载体：待补充  
+说明：用于放置隋唐宋元纹样第二条记录。
+
+## 明清近现代 {#ming-qing-modern}
+
+### 纹样 011 占位
+载体：待补充  
+说明：用于放置明清近现代纹样第一条记录。
+
+### 纹样 012 占位
+载体：待补充  
+说明：用于放置明清近现代纹样第二条记录。

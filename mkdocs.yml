@@ -1,20 +1,42 @@
-site_name: My site
+site_name: 文物修复
 site_url: https://mydomain.org/mysite
 site_description: 图案资源与设计参考文档
 
 nav:
   - 首页: index.md
-  - 分类检索:
-    - 检索总览: classification/index.md
-    - 按时代: classification/era.md
-    - 按地域: classification/region.md
-    - 按类别: classification/category.md
-    - 按工艺: classification/craft.md
-  - 机构资源: institutions.md
-  - 关于: about.md
+  - 纹样库:
+    - 全部: pattern-library/index.md
+    - 旧石器时代: pattern-library/paleolithic.md
+    - 新石器时代: pattern-library/neolithic.md
+    - 夏: pattern-library/xia.md
+    - 商: pattern-library/shang.md
+    - 周: pattern-library/zhou.md
+    - 秦: pattern-library/qin.md
+    - 汉: pattern-library/han.md
+    - 三国: pattern-library/three-kingdoms.md
+    - 晋: pattern-library/jin.md
+    - 南北朝: pattern-library/northern-southern-dynasties.md
+    - 隋: pattern-library/sui.md
+    - 唐: pattern-library/tang.md
+    - 五代十国: pattern-library/five-dynasties-ten-kingdoms.md
+    - 宋: pattern-library/song.md
+    - 辽: pattern-library/liao.md
+    - 西夏: pattern-library/xixia.md
+    - 金: pattern-library/jin.md
+    - 元: pattern-library/yuan.md
+    - 明: pattern-library/ming.md
+    - 清: pattern-library/qing.md
+    - 中华民国: pattern-library/republic-of-china.md
+    - 中华人民共和国: pattern-library/peoples-republic-of-china.md
+    - 不详: pattern-library/unknown.md
+  - 修复实验室: restoration-lab.md
+  - 修复工艺: craftsmanship.md
+  - 历代美学: aesthetics.md
+  - 关于我们: about-us.md
 
 theme:
   name: material
+  logo: assets/logo-mark.svg
   language: zh
   features:
     - navigation.tabs
