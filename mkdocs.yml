@@ -6,6 +6,7 @@ nav:
   - 首页: index.md
   - 纹样库:
     - 全部: pattern-library/index.md
+    - 纹样详情示例: pattern-library/detail-demo.md
     - 旧石器时代: pattern-library/paleolithic.md
     - 新石器时代: pattern-library/neolithic.md
     - 夏: pattern-library/xia.md
