@@ -118,13 +118,21 @@ body:has(.pattern-library-page) .md-main__inner {
   max-width: none;
 }
 
+body:has(.pattern-library-page) .md-sidebar__inner {
+  padding-bottom: 3.8rem;
+}
+
 body:has(.pattern-library-page) .md-sidebar--primary .md-sidebar__scrollwrap {
-  padding-right: 0.8rem;
+  padding-right: 0.9rem;
+  padding-bottom: 4rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  max-height: calc(100vh - 7.2rem);
 }
 
 body:has(.pattern-library-page) .md-sidebar--primary .md-nav--primary > .md-nav__list {
   border-right: 2px solid #c8875a;
-  padding-right: 0.65rem;
+  padding-right: 1.05rem;
 }
 
 body:has(.pattern-library-page) .md-sidebar--primary .md-nav__item {
@@ -135,8 +143,8 @@ body:has(.pattern-library-page) .md-sidebar--primary .md-nav__link {
   position: relative;
   color: #c1764f;
   font-size: 1rem;
-  padding: 0.2rem 1.5rem 0.2rem 0;
-  margin-right: -0.2rem;
+  padding: 0.2rem 1.75rem 0.2rem 0;
+  margin-right: 0;
   text-align: right;
   transition: color 180ms ease, transform 180ms ease;
 }
@@ -144,7 +152,7 @@ body:has(.pattern-library-page) .md-sidebar--primary .md-nav__link {
 body:has(.pattern-library-page) .md-sidebar--primary .md-nav__link::after {
   content: "";
   position: absolute;
-  right: -0.72rem;
+  right: 0.18rem;
   top: 50%;
   width: 0.92rem;
   height: 0.92rem;
@@ -157,7 +165,7 @@ body:has(.pattern-library-page) .md-sidebar--primary .md-nav__link::after {
 
 body:has(.pattern-library-page) .md-sidebar--primary .md-nav__link:hover {
   color: #9a4e28;
-  transform: translateX(-2px);
+  transform: translateX(-1px);
 }
 
 body:has(.pattern-library-page) .md-sidebar--primary .md-nav__link:hover::after {
@@ -593,21 +601,29 @@ body:has(.pattern-library-page) .md-sidebar--secondary .md-nav__link--active {
   grid-template-columns: minmax(280px, 34%) minmax(0, 1fr);
   gap: 1.2rem;
   margin: 1rem 0 1.8rem;
+  align-items: start;
 }
 
 .pattern-detail__image {
   border-radius: 0.5rem;
   overflow: hidden;
-  background: #e9e9e9;
+  background: #f6f3ee;
   border: 1px solid #e1ddd4;
+  aspect-ratio: 0.95 / 1;
 }
 
 .pattern-detail__image img {
   width: 100%;
   height: 100%;
-  min-height: 420px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
   display: block;
+  background: #f6f3ee;
+}
+
+.pattern-detail__content {
+  display: flex;
+  flex-direction: column;
 }
 
 .pattern-detail__top {
@@ -642,6 +658,8 @@ body:has(.pattern-library-page) .md-sidebar--secondary .md-nav__link--active {
   border-radius: 0.45rem;
   padding: 0.2rem 0.8rem;
   font-size: 0.95rem;
+  min-width: 5.6rem;
+  text-align: center;
 }
 
 .pattern-detail__info {
@@ -703,6 +721,55 @@ body:has(.pattern-library-page) .md-sidebar--secondary .md-nav__link--active {
 .pattern-detail__actions .btn-solid,
 .pattern-detail__actions .btn-outline {
   min-width: 9.5rem;
+}
+
+/* Hidden anchor headings: used for right-side TOC pattern name list */
+.pattern-seq-anchor {
+  margin: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  scroll-margin-top: 6.4rem;
+}
+
+.pattern-seq-item {
+  margin: 0.7rem 0 1rem;
+  border: 1px solid #e7e4dd;
+  border-radius: 0.72rem;
+  background: #faf9f7;
+  padding: 0.85rem;
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: start;
+}
+
+.pattern-seq-item__image {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #efece6;
+  border: 1px solid #e3dfd7;
+  aspect-ratio: 1 / 1;
+}
+
+.pattern-seq-item__image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+}
+
+.pattern-seq-item__body h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.45rem;
+}
+
+.pattern-seq-item__body p {
+  margin: 0;
+  color: #575b64;
+  line-height: 1.65;
 }
 
 /* Keep dynasty pages visually consistent */
@@ -789,6 +856,14 @@ body:has(.pattern-library-page) .md-sidebar--secondary .md-nav__link--active {
 
   .pattern-detail__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pattern-seq-item {
+    grid-template-columns: 1fr;
+  }
+
+  .pattern-seq-item__image {
+    max-width: 360px;
   }
 
   body:has(.pattern-library-page) .md-sidebar--primary,

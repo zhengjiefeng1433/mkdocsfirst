@@ -1,10 +1,2 @@
-<div class="pattern-library-page"></div>
+﻿<div class="pattern-library-page"></div># 三国<section class="pattern-detail">    <div class="pattern-detail__image">        <img src="../../image/pattern/excel-row036-八角形波浪纹.png" alt="八角形波浪纹示意图" />    </div>    <div class="pattern-detail__content">        <div class="pattern-detail__top">            <h2>八角形波浪纹</h2>            <a class="pattern-detail__fav" href="#">收藏</a>        </div>        <div class="pattern-detail__tags">            <span>几何纹</span>            <span>三国</span>            <span>几何纹</span>        </div>        <article class="pattern-detail__info">            <div class="pattern-detail__info-head">                <h3>基本信息</h3>                <p>素材等级：馆藏纹样</p>            </div>            <div class="pattern-detail__grid">                <div><strong>朝代(时期)</strong><span>三国</span></div>                <div><strong>公元纪年</strong><span>220年 - 280年</span></div>                <div><strong>纹样类别</strong><span>几何纹</span></div>                <div><strong>所属器物</strong><span>陶瓷、织物或建筑构件</span></div>                <div><strong>载体&工艺</strong><span>刻划、彩绘、印花或刺绣</span></div>                <div><strong>材质</strong><span>土、石、金属、纺织品等</span></div>            </div>            <p class="pattern-detail__desc"><strong>图案介绍：</strong>八角形波浪纹为三国时期常见的几何纹题材之一，常用于器物装饰、建筑彩绘或织绣图案，具有较强的装饰性与时代审美特征。</p>        </article>        <div class="pattern-detail__actions">            <a class="btn-solid" href="#">查看高清图</a>            <a class="btn-outline" href="#">下载</a>            <a class="btn-outline" href="#">加入清单</a>        </div>    </div></section>
 
-# 三国
-
-## 纹样次序
-
-### 纹样 001
-### 纹样 002
-### 纹样 003
-### 纹样 004

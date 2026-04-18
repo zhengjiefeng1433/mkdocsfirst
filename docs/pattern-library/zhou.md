@@ -1,10 +1,2 @@
-<div class="pattern-library-page"></div>
+﻿<div class="pattern-library-page"></div># 周代当前朝代暂无已录入纹样，后续将持续补充。### 暂无条目
 
-# 周
-
-## 纹样次序
-
-### 纹样 001
-### 纹样 002
-### 纹样 003
-### 纹样 004
