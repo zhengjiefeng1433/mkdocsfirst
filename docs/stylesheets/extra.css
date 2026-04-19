@@ -142,11 +142,22 @@ body:has(.pattern-library-page) .md-sidebar--primary .md-nav__item {
 body:has(.pattern-library-page) .md-sidebar--primary .md-nav__link {
   position: relative;
   color: #c1764f;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: 0.2rem 1.75rem 0.2rem 0;
   margin-right: 0;
   text-align: right;
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow: visible;
+  text-overflow: clip;
   transition: color 180ms ease, transform 180ms ease;
+}
+
+body:has(.pattern-library-page) .md-sidebar--primary .md-nav__link .md-ellipsis {
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: clip;
+  font-size: inherit;
 }
 
 body:has(.pattern-library-page) .md-sidebar--primary .md-nav__link::after {
@@ -639,6 +650,7 @@ body:has(.pattern-library-page) .md-sidebar--secondary .md-nav__link--active {
 }
 
 .pattern-detail__fav {
+  display: none;
   text-decoration: none;
   color: #8a6b90;
   white-space: nowrap;
@@ -721,6 +733,12 @@ body:has(.pattern-library-page) .md-sidebar--secondary .md-nav__link--active {
 .pattern-detail__actions .btn-solid,
 .pattern-detail__actions .btn-outline {
   min-width: 9.5rem;
+}
+
+.pattern-detail__actions .btn-outline.is-active {
+  border-color: #b56f46;
+  color: #9a4e28;
+  background: #fff7f1;
 }
 
 /* Hidden anchor headings: used for right-side TOC pattern name list */
