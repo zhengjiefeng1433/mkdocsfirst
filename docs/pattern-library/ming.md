@@ -6,7 +6,7 @@
 
 <section class="pattern-detail pattern-detail--seq">
     <div class="pattern-detail__image">
-        <img src="../../image/pattern/first-pattern.jpeg" alt="简单花卉纹" />
+        <img src="../../image/pattern/ming-simple-floral-dehua.jpg" alt="简单花卉纹" />
     </div>
     <div class="pattern-detail__content">
         <div class="pattern-detail__top">
@@ -32,6 +32,8 @@
                 <div><strong>所属器物</strong><span>陶瓷、织物或建筑构件</span></div>
                 <div><strong>载体&工艺</strong><span>刻划、彩绘、印花或刺绣</span></div>
                 <div><strong>材质</strong><span>土、石、金属、纺织品等</span></div>
+                <div><strong>瓷器类型</strong><span>德化窑</span></div>
+                <div><strong>纹样来源</strong><span>数字化重绘</span></div>
             </div>
             <p class="pattern-detail__desc"><strong>图案介绍：</strong>简单花卉纹为明代时期常见的植物纹题材之一，常用于器物装饰、建筑彩绘或织绣图案。</p>
         </article>
@@ -48,7 +50,7 @@
 
 <section class="pattern-detail pattern-detail--seq">
     <div class="pattern-detail__image">
-        <img src="../../image/pattern/first-pattern.jpeg" alt="缠枝纹" />
+        <img src="../../image/pattern/ming-chanzhi-jingdezhen-guanyao.jpg" alt="缠枝纹" />
     </div>
     <div class="pattern-detail__content">
         <div class="pattern-detail__top">
@@ -74,6 +76,8 @@
                 <div><strong>所属器物</strong><span>陶瓷、织物或建筑构件</span></div>
                 <div><strong>载体&工艺</strong><span>刻划、彩绘、印花或刺绣</span></div>
                 <div><strong>材质</strong><span>土、石、金属、纺织品等</span></div>
+                <div><strong>瓷器类型</strong><span>景德镇官窑</span></div>
+                <div><strong>纹样来源</strong><span>数字化重绘</span></div>
             </div>
             <p class="pattern-detail__desc"><strong>图案介绍：</strong>缠枝纹为明代时期常见的植物纹题材之一，常用于器物装饰、建筑彩绘或织绣图案。</p>
         </article>
@@ -90,7 +94,7 @@
 
 <section class="pattern-detail pattern-detail--seq">
     <div class="pattern-detail__image">
-        <img src="../../image/pattern/first-pattern.jpeg" alt="凤鸟纹" />
+        <img src="../../image/pattern/ming-fengniao-jingdezhen-guanyao.jpg" alt="凤鸟纹" />
     </div>
     <div class="pattern-detail__content">
         <div class="pattern-detail__top">
@@ -116,6 +120,8 @@
                 <div><strong>所属器物</strong><span>陶瓷、织物或建筑构件</span></div>
                 <div><strong>载体&工艺</strong><span>刻划、彩绘、印花或刺绣</span></div>
                 <div><strong>材质</strong><span>土、石、金属、纺织品等</span></div>
+                <div><strong>瓷器类型</strong><span>景德镇官窑</span></div>
+                <div><strong>纹样来源</strong><span>数字化重绘</span></div>
             </div>
             <p class="pattern-detail__desc"><strong>图案介绍：</strong>凤鸟纹为明代时期常见的动物纹题材之一，常用于器物装饰、建筑彩绘或织绣图案。</p>
         </article>
@@ -132,7 +138,7 @@
 
 <section class="pattern-detail pattern-detail--seq">
     <div class="pattern-detail__image">
-        <img src="../../image/pattern/first-pattern.jpeg" alt="花果纹" />
+        <img src="../../image/pattern/ming-huaguo-jingdezhen-guanyao.jpg" alt="花果纹" />
     </div>
     <div class="pattern-detail__content">
         <div class="pattern-detail__top">
@@ -158,6 +164,8 @@
                 <div><strong>所属器物</strong><span>陶瓷、织物或建筑构件</span></div>
                 <div><strong>载体&工艺</strong><span>刻划、彩绘、印花或刺绣</span></div>
                 <div><strong>材质</strong><span>土、石、金属、纺织品等</span></div>
+                <div><strong>瓷器类型</strong><span>景德镇官窑</span></div>
+                <div><strong>纹样来源</strong><span>数字化重绘</span></div>
             </div>
             <p class="pattern-detail__desc"><strong>图案介绍：</strong>花果纹为明代时期常见的植物纹题材之一，常用于器物装饰、建筑彩绘或织绣图案。</p>
         </article>
@@ -170,15 +178,15 @@
     </div>
 </section>
 
-### 剔刻花卉 {: .pattern-seq-anchor }
+### 雕刻花卉 {: .pattern-seq-anchor }
 
 <section class="pattern-detail pattern-detail--seq">
     <div class="pattern-detail__image">
-        <img src="../../image/pattern/first-pattern.jpeg" alt="剔刻花卉" />
+        <img src="../../image/pattern/ming-diaoke-huahui-longquanyao.jpg" alt="雕刻花卉" />
     </div>
     <div class="pattern-detail__content">
         <div class="pattern-detail__top">
-            <h2>剔刻花卉</h2>
+            <h2>雕刻花卉</h2>
             <a class="pattern-detail__fav" href="#">收藏</a>
         </div>
 
@@ -200,8 +208,10 @@
                 <div><strong>所属器物</strong><span>陶瓷、织物或建筑构件</span></div>
                 <div><strong>载体&工艺</strong><span>刻划、彩绘、印花或刺绣</span></div>
                 <div><strong>材质</strong><span>土、石、金属、纺织品等</span></div>
+                <div><strong>瓷器类型</strong><span>龙泉窑</span></div>
+                <div><strong>纹样来源</strong><span>数字化重绘</span></div>
             </div>
-            <p class="pattern-detail__desc"><strong>图案介绍：</strong>剔刻花卉为明代时期常见的植物纹题材之一，常用于器物装饰、建筑彩绘或织绣图案。</p>
+            <p class="pattern-detail__desc"><strong>图案介绍：</strong>雕刻花卉为明代时期常见的植物纹题材之一，常用于器物装饰、建筑彩绘或织绣图案。</p>
         </article>
 
         <div class="pattern-detail__actions">
@@ -216,7 +226,7 @@
 
 <section class="pattern-detail pattern-detail--seq">
     <div class="pattern-detail__image">
-        <img src="../../image/pattern/first-pattern.jpeg" alt="婴戏纹" />
+        <img src="../../image/pattern/ming-yingxi-jingdezhen-minyao.jpg" alt="婴戏纹" />
     </div>
     <div class="pattern-detail__content">
         <div class="pattern-detail__top">
@@ -242,6 +252,8 @@
                 <div><strong>所属器物</strong><span>陶瓷、织物或建筑构件</span></div>
                 <div><strong>载体&工艺</strong><span>刻划、彩绘、印花或刺绣</span></div>
                 <div><strong>材质</strong><span>土、石、金属、纺织品等</span></div>
+                <div><strong>瓷器类型</strong><span>景德镇民窑</span></div>
+                <div><strong>纹样来源</strong><span>数字化重绘</span></div>
             </div>
             <p class="pattern-detail__desc"><strong>图案介绍：</strong>婴戏纹为明代时期常见的人物题材之一，常用于器物装饰、建筑彩绘或织绣图案。</p>
         </article>
