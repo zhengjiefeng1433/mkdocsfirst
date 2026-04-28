@@ -47,13 +47,28 @@ body {
   letter-spacing: 0.01em;
 }
 
-.md-header__topic:first-child::after {
-  content: "PATTERN RESTORATION";
-  display: block;
-  font-size: 0.72rem;
-  letter-spacing: 0.2em;
-  color: #8f9298;
-  font-weight: 600;
+.md-header__topic:first-child .md-ellipsis {
+  display: inline-block;
+  width: min(16rem, 42vw);
+  height: 2.75rem;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  position: relative;
+}
+
+.md-header__topic:first-child .md-ellipsis::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../assets/wordmark-relic-glow.svg") center left / contain no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .md-header__topic:first-child .md-ellipsis {
+    width: min(12rem, 50vw);
+    height: 2.2rem;
+  }
 }
 
 .md-tabs {
