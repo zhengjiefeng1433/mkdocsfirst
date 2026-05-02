@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:collectionapi.metmuseum.org)",
+      "PowerShell(\\(Get-Content c:\\\\GitHub\\\\mkdocsfirst\\\\docs\\\\stylesheets\\\\extra.css | Measure-Object -Line\\).Lines)",
+      "PowerShell(Select-String -Path \"c:\\\\GitHub\\\\mkdocsfirst\\\\docs\\\\stylesheets\\\\extra.css\" -Pattern \"\\\\.community\" | Select-Object -First 20 | ForEach-Object { \"$\\($_.LineNumber\\): $\\($_.Line\\)\" })",
+      "PowerShell($content = Get-Content \"c:\\\\GitHub\\\\mkdocsfirst\\\\docs\\\\stylesheets\\\\extra.css\" -Raw; if \\($content -match \"community\"\\) { \"FOUND\" } else { \"NOT FOUND\" }; \"Length: $\\($content.Length\\)\")",
+      "PowerShell($site = Get-Content \"c:\\\\GitHub\\\\mkdocsfirst\\\\site\\\\stylesheets\\\\extra.css\" -Raw; if \\($site -match \"community\"\\) { \"FOUND\" } else { \"NOT FOUND\" }; \"Length: $\\($site.Length\\)\")",
+      "PowerShell($site = Get-Content \"c:\\\\GitHub\\\\mkdocsfirst\\\\site\\\\stylesheets\\\\extra.css\" -Raw; $local = Get-Content \"c:\\\\GitHub\\\\mkdocsfirst\\\\docs\\\\stylesheets\\\\extra.css\" -Raw; \"Site length: $\\($site.Length\\)\"; \"Local length: $\\($local.Length\\)\"; \"Diff: $\\($site.Length - $local.Length\\)\")",
+      "PowerShell(\\(Get-Content \"c:\\\\GitHub\\\\mkdocsfirst\\\\site\\\\stylesheets\\\\extra.css\" | Measure-Object -Line\\).Lines)",
+      "PowerShell($site = \\(Get-Content \"c:\\\\GitHub\\\\mkdocsfirst\\\\site\\\\stylesheets\\\\extra.css\"\\) -join \"`n\"; $local = \\(Get-Content \"c:\\\\GitHub\\\\mkdocsfirst\\\\docs\\\\stylesheets\\\\extra.css\"\\) -join \"`n\"; $diffStart = 0; for \\($i = 0; $i -lt [Math]::Min\\($site.Length, $local.Length\\); $i++\\) { if \\($site[$i] -ne $local[$i]\\) { $diffStart = $i; break } }; \"Diff starts at: $diffStart\"; $site.Substring\\([Math]::Max\\(0, $diffStart - 50\\), 200\\))"
+    ]
+  }
+}

@@ -4,6 +4,7 @@ site_description: 图案资源与设计参考文档
 
 nav:
   - 首页: index.md
+  - 文物展览: exhibition.md
   - 纹样库:
     - 旧石器时代: pattern-library/paleolithic.md
     - 新石器时代: pattern-library/neolithic.md
@@ -31,6 +32,9 @@ nav:
   - 修复实验室: restoration-lab.md
   - 修复工艺: craftsmanship.md
   - 历代美学: aesthetics.md
+  - 灵境对话: spirit-dialogue.md
+  - 数字确权: digital-rights.md
+  - 共创社区: community.md
   - 关于我们: about-us.md
 
 theme:
@@ -52,6 +56,7 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/logo-replacement.css
 
 extra_javascript:
   - assets/javascripts/pattern-actions.js
