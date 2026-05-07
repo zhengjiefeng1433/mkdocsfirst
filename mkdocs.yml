@@ -57,9 +57,11 @@ theme:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/logo-replacement.css
+  - stylesheets/restoration-lab.css
 
 extra_javascript:
   - assets/javascripts/pattern-actions.js
+  - assets/javascripts/restoration-lab.js
 
 markdown_extensions:
   - admonition
