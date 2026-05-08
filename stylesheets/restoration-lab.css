@@ -1,0 +1,314 @@
+/* 修复实验室 — 交互样式 */
+
+.lab-canvas {
+  position: relative;
+  padding: 1.4rem;
+}
+
+.restore-stage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* 统一画布：三种状态共用同一个固定尺寸的方框 */
+.restore-viewport {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  aspect-ratio: 1 / 1;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  background: #f6f1e6;
+  border: 1px solid var(--line, #e7e3d8);
+}
+
+.restore-viewport > [data-restore-view] {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.restore-viewport > [data-restore-view][hidden] {
+  display: none;
+}
+
+.restore-viewport .restore-working,
+.restore-viewport .restore-result {
+  padding: 0;
+  background: #1d1d1d;
+}
+
+.restore-viewport img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* footer 区：固定高度，避免不同状态切换时跳动 */
+.restore-stage-footer {
+  width: 100%;
+  max-width: 460px;
+  min-height: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.restore-footer-slot {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.restore-footer-slot[hidden] {
+  display: none;
+}
+
+.restore-result-badge {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  border-radius: 999px;
+  background: rgba(176, 145, 90, 0.92);
+  color: #fff;
+}
+
+.restore-idle .scan-dot {
+  position: relative;
+}
+
+.restore-idle .scan-dot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  border: 2px solid rgba(204, 120, 92, 0.35);
+  animation: restore-pulse 2.4s ease-out infinite;
+}
+
+.restore-mark {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 0.6rem;
+  display: block;
+  position: relative;
+  filter: drop-shadow(0 4px 14px rgba(204, 120, 92, 0.25));
+  animation: restore-mark-spin 12s linear infinite;
+}
+
+.lab-canvas .restore-idle h2 {
+  margin: 0 0 0.4rem !important;
+  font-size: 1.4rem !important;
+  line-height: 1.2 !important;
+}
+
+.lab-canvas .restore-idle p {
+  margin: 0 !important;
+  color: var(--muted);
+  font-size: 0.9rem !important;
+  line-height: 1.5 !important;
+  max-width: 92%;
+}
+
+@keyframes restore-mark-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes restore-pulse {
+  0% { transform: scale(0.85); opacity: 0.9; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+.restore-upload-btn {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.restore-hint {
+  margin-top: 0.6rem !important;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+/* 拖拽中高亮 */
+.lab-canvas.is-dragover {
+  background: #f1ece0;
+  border-color: var(--gold, #b0915a);
+}
+
+/* 工作中扫描线 */
+.restore-scanline {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  top: 0;
+  background: linear-gradient(90deg, transparent, rgba(176, 145, 90, 0.9), transparent);
+  box-shadow: 0 0 18px rgba(176, 145, 90, 0.65);
+  animation: restore-scan 1.6s ease-in-out infinite;
+}
+
+@keyframes restore-scan {
+  0%   { top: 0%; opacity: 0.2; }
+  50%  { top: 100%; opacity: 1; }
+  100% { top: 0%; opacity: 0.2; }
+}
+
+.restore-progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #ece8df;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.restore-progress-bar span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #b0915a, #d4b67c);
+  transition: width 0.4s ease;
+}
+
+#restoreProgressText {
+  margin: 0.6rem 0 0 !important;
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+/* 状态面板 — 步骤激活态 */
+.status-panel li {
+  position: relative;
+  padding-left: 1.6rem;
+  transition: color 0.3s ease;
+}
+
+.status-panel li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 999px;
+  background: #e2ddd2;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.status-panel li.is-active {
+  color: #1f2330;
+  font-weight: 600;
+}
+
+.status-panel li.is-active::before {
+  background: var(--gold, #b0915a);
+  box-shadow: 0 0 0 4px rgba(176, 145, 90, 0.18);
+}
+
+.status-panel li.is-done {
+  color: #4a4d56;
+}
+
+.status-panel li.is-done::before {
+  background: #6a8a5e;
+}
+
+.restore-match-info {
+  margin: 0 !important;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* 样品库 */
+.restore-gallery {
+  margin: 2.6rem 0 3rem;
+}
+
+.restore-gallery-head h2 {
+  margin: 0 0 0.3rem;
+}
+
+.restore-gallery-head p {
+  margin: 0 0 1.2rem;
+  color: var(--muted);
+}
+
+.restore-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 0.9rem;
+}
+
+.restore-card {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  cursor: pointer;
+  background: #1f1f1f;
+  border: 1px solid var(--line, #e7e3d8);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.restore-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+}
+
+.restore-card > img,
+.restore-card canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.restore-card-meta {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.78rem;
+  color: #fff;
+  background: linear-gradient(180deg, transparent, rgba(0,0,0,0.7));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.restore-card-meta .tag {
+  background: rgba(255,255,255,0.16);
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 760px) {
+  .restore-gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+  .restore-viewport,
+  .restore-stage-footer {
+    max-width: 100%;
+  }
+}
