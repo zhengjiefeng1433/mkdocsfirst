@@ -3,42 +3,40 @@
 <section class="lab-area">
   <article class="lab-canvas" id="restoreCanvas">
     <div class="restore-stage" data-state="idle">
-      <div class="restore-idle" data-restore-view="idle">
-        <img class="restore-mark" src="../assets/claude-icon.svg" alt="">
+      <div class="restore-viewport">
+        <div class="restore-idle" data-restore-view="idle">
+          <img class="restore-mark" src="../assets/claude-icon.svg" alt="">
+          <h2>准备就绪</h2>
+        </div>
 
-        <h2>准备就绪</h2>
-        <p>拖拽或点击上传破碎瓷器图片，或从下方样品库挑选</p>
-        <label class="btn-solid restore-upload-btn">
-          上传破碎瓷器
-          <input type="file" id="restoreUpload" accept="image/*" hidden>
-        </label>
-        <p class="restore-hint">支持 JPG / PNG，建议主体清晰、背景简洁</p>
-      </div>
-
-      <div class="restore-working" data-restore-view="working" hidden>
-        <div class="restore-working-img">
+        <div class="restore-working" data-restore-view="working" hidden>
           <img alt="待修复图像" id="restoreInputImg">
           <div class="restore-scanline"></div>
         </div>
-        <div class="restore-progress">
-          <div class="restore-progress-bar"><span id="restoreProgressFill"></span></div>
-          <p id="restoreProgressText">正在采集图像...</p>
+
+        <div class="restore-result" data-restore-view="result" hidden>
+          <img id="restoreAfter" alt="修复后">
+          <div class="restore-result-badge">修复完成</div>
         </div>
       </div>
 
-      <div class="restore-result" data-restore-view="result" hidden>
-        <div class="restore-slider" id="restoreSlider">
-          <img class="restore-after" id="restoreAfter" alt="修复后">
-          <div class="restore-before-wrap" id="restoreBeforeWrap">
-            <img class="restore-before" id="restoreBefore" alt="破损">
-          </div>
-          <div class="restore-handle" id="restoreHandle"><span></span></div>
-          <div class="restore-label restore-label--before">破损</div>
-          <div class="restore-label restore-label--after">修复</div>
+      <div class="restore-stage-footer">
+        <div class="restore-footer-slot" data-restore-view="idle">
+          <label class="btn-solid restore-upload-btn">
+            上传破碎瓷器
+            <input type="file" id="restoreUpload" accept="image/*" hidden>
+          </label>
+          <p class="restore-hint">支持 JPG / PNG，建议主体清晰、背景简洁</p>
         </div>
-        <div class="restore-result-actions">
+
+        <div class="restore-footer-slot" data-restore-view="working" hidden>
+          <div class="restore-progress-bar"><span id="restoreProgressFill"></span></div>
+          <p id="restoreProgressText">正在采集图像...</p>
+        </div>
+
+        <div class="restore-footer-slot" data-restore-view="result" hidden>
           <button class="btn-solid" id="restoreReset">重新开始</button>
-          <span class="restore-match-info" id="restoreMatchInfo"></span>
+          <p class="restore-match-info" id="restoreMatchInfo"></p>
         </div>
       </div>
     </div>
@@ -65,12 +63,4 @@
       </div>
     </article>
   </div>
-</section>
-
-<section class="restore-gallery">
-  <header class="restore-gallery-head">
-    <h2>样品库</h2>
-    <p>点击任一样品，演示「破损 → 修复」全过程；破损蒙版由浏览器实时生成</p>
-  </header>
-  <div class="restore-gallery-grid" id="restoreGalleryGrid"></div>
 </section>

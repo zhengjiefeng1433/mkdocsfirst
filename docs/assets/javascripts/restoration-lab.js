@@ -81,12 +81,9 @@
     const progressFill  = document.getElementById('restoreProgressFill');
     const progressText  = document.getElementById('restoreProgressText');
     const statusItems   = Array.from(document.querySelectorAll('#restoreStatusList li'));
-    const beforeImg     = document.getElementById('restoreBefore');
     const afterImg      = document.getElementById('restoreAfter');
-    const beforeWrap    = document.getElementById('restoreBeforeWrap');
-    const handle        = document.getElementById('restoreHandle');
-    const slider        = document.getElementById('restoreSlider');
     const matchInfo     = document.getElementById('restoreMatchInfo');
+    const footerSlots   = Array.from(root.querySelectorAll('.restore-footer-slot'));
     const resetBtn      = document.getElementById('restoreReset');
     const galleryGrid   = document.getElementById('restoreGalleryGrid');
     const sampleCount   = document.getElementById('restoreSampleCount');
@@ -99,16 +96,12 @@
       loadImage(IMAGE_DIR_AFTER  + s.file).then(img => { s.afterImg  = img; s.hash = aHash(img); }).catch(() => {}),
       loadImage(IMAGE_DIR_BEFORE + s.file).then(img => { s.beforeImg = img; }).catch(() => {}),
     ]))).then(() => {
-      const usable = sampleData.filter(s => s.afterImg && s.beforeImg).length;
-      sampleCount.textContent = sampleData.filter(s => s.afterImg).length + ' 件';
-      if (usable === 0) {
-        galleryGrid.innerHTML = '<p style="color:var(--muted);grid-column:1/-1;">尚无可展示的破损样本，请将破损图放到 docs/image/restoration-before/ 下（与修复后图同名）。</p>';
-      } else {
-        buildGallery();
-      }
+      if (sampleCount) sampleCount.textContent = sampleData.filter(s => s.afterImg).length + ' 件';
+      if (galleryGrid) buildGallery();
     });
 
     function buildGallery() {
+      if (!galleryGrid) return;
       galleryGrid.innerHTML = '';
       sampleData.forEach(s => {
         if (!s.afterImg || !s.beforeImg) return;
@@ -128,12 +121,15 @@
       });
     }
 
-    // 显示视图
+    // 显示视图（同步切换画布与底部 slot）
     function showView(name) {
       stage.dataset.state = name;
       idleView.hidden    = name !== 'idle';
       workingView.hidden = name !== 'working';
       resultView.hidden  = name !== 'result';
+      footerSlots.forEach(slot => {
+        slot.hidden = slot.dataset.restoreView !== name;
+      });
     }
 
     // 状态面板高亮
@@ -198,7 +194,7 @@
         return;
       }
       const similarity = ((64 - bestD) / 64 * 100).toFixed(1);
-      revealResult(url, best.afterImg.src, `匹配：${best.name}（${best.era}）· 相似度 ${similarity}%`);
+      revealResult(best.afterImg.src, `匹配：${best.name}（${best.era}）· 相似度 ${similarity}%`);
     }
 
     // 主流程：用户点样品 → 直接展示对应完整图
@@ -206,41 +202,14 @@
       inputImg.src = sample.beforeImg.src;
       showView('working');
       await runAnimation();
-      revealResult(sample.beforeImg.src, sample.afterImg.src, `匹配：${sample.name}（${sample.era}）· 相似度 100%`);
+      revealResult(sample.afterImg.src, `匹配：${sample.name}（${sample.era}）· 相似度 100%`);
     }
 
-    function revealResult(beforeSrc, afterSrc, info) {
-      beforeImg.src = beforeSrc;
-      afterImg.src  = afterSrc;
+    function revealResult(afterSrc, info) {
+      afterImg.src = afterSrc;
       matchInfo.textContent = info;
-      setSliderPosition(50);
       showView('result');
     }
-
-    // 滑块拖拽
-    function setSliderPosition(pct) {
-      pct = Math.max(0, Math.min(100, pct));
-      beforeWrap.style.clipPath = `inset(0 ${pct}% 0 0)`;
-      handle.style.left = pct + '%';
-    }
-    function onSliderMove(clientX) {
-      const rect = slider.getBoundingClientRect();
-      const pct = (clientX - rect.left) / rect.width * 100;
-      setSliderPosition(pct);
-    }
-    let dragging = false;
-    slider.addEventListener('pointerdown', e => {
-      dragging = true;
-      slider.setPointerCapture(e.pointerId);
-      onSliderMove(e.clientX);
-    });
-    slider.addEventListener('pointermove', e => {
-      if (dragging) onSliderMove(e.clientX);
-    });
-    slider.addEventListener('pointerup', e => {
-      dragging = false;
-      try { slider.releasePointerCapture(e.pointerId); } catch (_) {}
-    });
 
     // 重置
     resetBtn.addEventListener('click', () => {
