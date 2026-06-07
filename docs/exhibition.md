@@ -9,7 +9,6 @@
 <div class="exhibition-filter">
   <a class="is-active" href="#catalog">全部</a>
   <a href="#qing">清代</a>
-  <a href="#yuan">元代</a>
   <a href="#ming">明代</a>
 </div>
 
@@ -28,11 +27,11 @@
 
   <article class="exhibition-card exhibition-card--overlay">
     <div class="exhibition-card__image">
-      <img src="https://images.metmuseum.org/CRDImages/as/original/DP274702.jpg" alt="元代青花牡丹纹梅瓶" />
+      <img src="https://images.metmuseum.org/CRDImages/as/original/79_2_1375_S1_sf.jpg" alt="清代斗彩花卉纹花觚" />
       <div class="exhibition-card__overlay">
-        <p class="exhibition-card__era">YUAN DYNASTY (1271–1368)</p>
-        <h2>青花牡丹纹梅瓶</h2>
-        <p>苏麻离青料发色浓艳，铁钴共存形成晕散层次，展现元青花的雄浑张力。</p>
+        <p class="exhibition-card__era">QING DYNASTY (1644–1912)</p>
+        <h2>斗彩花卉纹花觚</h2>
+        <p>景德镇官窑斗彩名品，青花勾线、五彩填染，缠枝花卉繁而不乱，尽显清代官窑的精丽法度。</p>
         <a class="exhibition-card__cta" href="../spirit-dialogue/?artifact=yuan">对话</a>
       </div>
     </div>
@@ -57,8 +56,8 @@
     <p>清代景德镇官窑所出，器型修长，釉面均匀，冰裂开片乃釉面与胎体热膨胀系数差异自然形成，匠人将此偶然之美固化为制瓷语言。藏于大都会艺术博物馆。</p>
   </article>
   <article id="yuan">
-    <h2>元代 · 青花牡丹纹梅瓶</h2>
-    <p>元代青花以进口苏麻离青料绘制，铁钴共存使蓝色呈现浓艳的晕散效果。缠枝牡丹纹饱满流转，为元代青花经典题材。14世纪中期，藏于大都会艺术博物馆。</p>
+    <h2>清代 · 斗彩花卉纹花觚（景德镇官窑）</h2>
+    <p>清乾隆景德镇官窑斗彩花觚，先以釉下青花勾勒轮廓，复以釉上五彩填染，蓝彩相映、层次分明。觚形仿古、纹饰缠枝，繁丽而有法度，为清代官窑斗彩之精品。藏于大都会艺术博物馆。</p>
   </article>
   <article id="ming">
     <h2>明代 · 青花花卉纹瓷盘</h2>

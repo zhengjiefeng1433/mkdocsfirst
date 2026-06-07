@@ -10,13 +10,13 @@
   <aside class="dialogue-selector-panel">
     <h3 class="dialogue-selector-title">选择对话者</h3>
     <div class="dialogue-artifact-list">
-      <div class="dialogue-artifact-item is-active" data-artifact="yuan" data-name="青花牡丹纹梅瓶" data-sub="元代 · 大都会艺术博物馆藏" data-img="https://images.metmuseum.org/CRDImages/as/original/DP274702.jpg" data-greeting="吾生于元代，梅瓶之形挺拔，青花牡丹纹气势饱满。你若问我身世与工艺，我愿细细道来。">
+      <div class="dialogue-artifact-item is-active" data-artifact="yuan" data-name="斗彩花卉纹花觚" data-sub="清代 · 大都会艺术博物馆藏" data-img="https://images.metmuseum.org/CRDImages/as/original/79_2_1375_S1_sf.jpg" data-greeting="吾乃清代景德镇官窑斗彩花觚，觚形仿古，青花勾线、五彩填染，缠枝花卉繁而不乱。你若问我工艺与寓意，我愿细细道来。">
         <div class="dialogue-artifact-thumb">
-          <img src="https://images.metmuseum.org/CRDImages/as/original/DP274702.jpg" alt="青花牡丹纹梅瓶" />
+          <img src="https://images.metmuseum.org/CRDImages/as/original/79_2_1375_S1_sf.jpg" alt="斗彩花卉纹花觚" />
         </div>
         <div class="dialogue-artifact-meta">
-          <strong>青花牡丹纹梅瓶</strong>
-          <span>元代 · 大都会艺术博物馆藏</span>
+          <strong>斗彩花卉纹花觚</strong>
+          <span>清代 · 大都会艺术博物馆藏</span>
         </div>
       </div>
       <div class="dialogue-artifact-item" data-artifact="ming" data-name="青花花卉纹瓷盘" data-sub="明代 · 大都会艺术博物馆藏" data-img="https://images.metmuseum.org/CRDImages/as/original/24_170_1_O1_sf.jpg" data-greeting="吾为明代青花花卉纹瓷盘，构图层次分明，花卉纹样细腻。若想了解明代审美与工艺，我可为你讲述。">
@@ -43,18 +43,18 @@
   <div class="dialogue-chat">
     <div class="dialogue-chat-header">
       <div class="dialogue-chat-avatar">
-        <img id="dialogue-header-img" src="https://images.metmuseum.org/CRDImages/as/original/DP274702.jpg" alt="当前文物" />
+        <img id="dialogue-header-img" src="https://images.metmuseum.org/CRDImages/as/original/79_2_1375_S1_sf.jpg" alt="当前文物" />
       </div>
       <div class="dialogue-chat-header-text">
-        <strong id="dialogue-header-name">青花牡丹纹梅瓶</strong>
+        <strong id="dialogue-header-name">斗彩花卉纹花觚</strong>
         <p class="dialogue-status" id="dialogue-ai-status">✦ AI 对话中 · Backend Proxy Mode</p>
       </div>
     </div>
 
     <div class="dialogue-messages" id="dialogue-messages">
       <div class="dialogue-msg dialogue-msg--artifact">
-        <img class="dialogue-avatar" src="https://images.metmuseum.org/CRDImages/as/original/DP274702.jpg" alt="文物头像" id="dialogue-first-avatar" />
-        <div class="dialogue-bubble" id="dialogue-first-bubble">吾生于元代，梅瓶之形挺拔，青花牡丹纹气势饱满。你若问我身世与工艺，我愿细细道来。</div>
+        <img class="dialogue-avatar" src="https://images.metmuseum.org/CRDImages/as/original/79_2_1375_S1_sf.jpg" alt="文物头像" id="dialogue-first-avatar" />
+        <div class="dialogue-bubble" id="dialogue-first-bubble">吾乃清代景德镇官窑斗彩花觚，觚形仿古，青花勾线、五彩填染，缠枝花卉繁而不乱。你若问我工艺与寓意，我愿细细道来。</div>
       </div>
     </div>
 

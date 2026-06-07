@@ -2,9 +2,9 @@
 
 <section class="restoration-hero">
   <div class="hero-copy">
-    <p class="hero-label">YIJING GALLERY · CULTURAL HERITAGE</p>
-    <h1>艺境·长廊<span>数字焕新</span></h1>
-    <p>当文物遇见人工智能，时间不再只是流逝的刻度。我们以修复、展示、对话与共创为核心，让中华文明在数字世界持续生长。</p>
+    <p class="hero-label">MING-QING IMPERIAL PORCELAIN · RESTORATION</p>
+    <h1>官窑重光<span>瓷韵新生</span></h1>
+    <p>当残损的明清官窑瓷器遇见数字技术，破碎不再是终点。我们通过高精度扫描采集器物纹样，与纹样库逐一比对匹配，据此复原缺失图案并完成修复，让沉睡的官窑重器重现昔日釉光与纹饰。</p>
     <div class="hero-actions">
       <a class="btn-solid" href="exhibition/">开启探索</a>
       <a class="btn-outline" href="spirit-dialogue/">对话文物</a>
@@ -13,15 +13,15 @@
   </div>
   <div class="hero-visual">
     <div class="hero-ring">
-      <img src="./image/index/hero-art.png" alt="纹样展示图" />
+      <img src="./image/index/hero-art.png" alt="明清官窑瓷器修复" />
     </div>
     <div class="hero-badge hero-badge-top">
-      <p>匹配精度</p>
+      <p>纹样匹配精度</p>
       <strong>99.8%</strong>
     </div>
     <div class="hero-badge hero-badge-bottom">
-      <p>已收录纹样</p>
-      <strong>12,400+</strong>
+      <p>已修复官窑器</p>
+      <strong>1,200+</strong>
     </div>
   </div>
 </section>
@@ -56,23 +56,23 @@
 
 <section class="home-featured">
   <div class="home-featured-media">
-    <img src="./image/pattern/yuan-longwen-jingdezhen-guanyao.jpg" alt="元代龙纹青花大罐" />
+    <img src="./image/pattern/qing-qianlong-gourd-vase-guanyao.jpg" alt="清乾隆景德镇官窑红蝠纹葫芦瓶" />
   </div>
   <div class="home-featured-copy">
-    <p class="section-kicker">FEATURED ARTIFACT</p>
-    <h2>重器留痕，文明可触</h2>
-    <p>龙纹青花大罐以浓烈钴蓝与磅礴器形展现元代审美风貌。通过高精度图像与结构化档案，我们将“器物本体 + 历史语境”完整呈现于数字空间。</p>
+    <p class="section-kicker">FEATURED RESTORATION</p>
+    <h2>残器重光，釉色再生</h2>
+    <p>清乾隆景德镇官窑葫芦瓶，以红蝠纹寓“洪福”，釉上釉下彩交映，尽显盛清官窑之精丽。我们循“三维扫描采集 → 纹样库比对匹配 → 缺失纹饰复原 → 补釉随色修复”的流程，让残损重器重现往日釉光与纹饰。</p>
     <div class="home-featured-metrics">
       <div>
-        <strong>1271-1368</strong>
-        <span>元代纪年</span>
+        <strong>1736-1795</strong>
+        <span>乾隆纪年</span>
       </div>
       <div>
-        <strong>3D / 2K</strong>
-        <span>数字采样</span>
+        <strong>扫描 · 匹配 · 复原</strong>
+        <span>修复流程</span>
       </div>
     </div>
-    <a class="btn-solid" href="exhibition/">立即查看文物</a>
+    <a class="btn-solid" href="exhibition/">查看修复详情</a>
   </div>
 </section>
 

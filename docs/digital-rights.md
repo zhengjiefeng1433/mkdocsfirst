@@ -9,15 +9,15 @@
 <div class="dr-asset-card">
   <div class="dr-asset-image">
     <span class="dr-badge">DIGITAL ASSET</span>
-    <img src="../image/pattern/yuan-longwen-jingdezhen-guanyao.jpg" alt="龙纹青花大罐" />
+    <img src="../image/pattern/qing-kangxi-taohuayou-guanyao.jpg" alt="桃花釉官窑瓶" />
     <div class="dr-verify-bar">
       <span class="dr-verify-dot"></span>
       <span>链上验证中 · On-chain Verified</span>
     </div>
   </div>
   <div class="dr-asset-info">
-    <h2>龙纹青花大罐</h2>
-    <p class="dr-dynasty">Yuan Dynasty (1271–1368)</p>
+    <h2>桃花釉官窑瓶</h2>
+    <p class="dr-dynasty">Qing Dynasty · Kangxi (1662–1722)</p>
 
     <div class="dr-features">
       <div class="dr-feature">
@@ -87,18 +87,18 @@
   <div class="dr-gallery-grid">
     <div class="dr-gallery-card">
       <div class="dr-gallery-img">
-        <img src="../image/pattern/qing-binglie-jingdezhen-guanyao.jpg" alt="冰裂纹青花瓷瓶" />
+        <img src="../image/pattern/qing-crackle-meiping-guanyao.jpg" alt="冰裂纹梅瓶" />
       </div>
       <div class="dr-gallery-body">
         <p class="dr-gallery-era">清代 · 景德镇官窑</p>
-        <strong>冰裂纹青花瓷瓶</strong>
+        <strong>冰裂纹梅瓶</strong>
         <div class="dr-gallery-token">Token: 0xA3F12...</div>
         <span class="dr-gallery-status">✓ 已确权</span>
       </div>
     </div>
     <div class="dr-gallery-card">
       <div class="dr-gallery-img">
-        <img src="../image/pattern/ming-huaguo-jingdezhen-guanyao.jpg" alt="青花花果纹瓷盘" />
+        <img src="../image/pattern/ming-wanli-qinghua-dish-guanyao.jpg" alt="青花花果纹瓷盘" />
       </div>
       <div class="dr-gallery-body">
         <p class="dr-gallery-era">明代 · 景德镇官窑</p>
@@ -109,11 +109,11 @@
     </div>
     <div class="dr-gallery-card">
       <div class="dr-gallery-img">
-        <img src="../image/pattern/ming-chanzhi-jingdezhen-guanyao.jpg" alt="缠枝纹青花瓷瓶" />
+        <img src="../image/pattern/ming-yongle-chanzhilian-bowl-guanyao.jpg" alt="缠枝莲纹青花碗" />
       </div>
       <div class="dr-gallery-body">
         <p class="dr-gallery-era">明代 · 景德镇官窑</p>
-        <strong>缠枝纹青花瓷瓶</strong>
+        <strong>缠枝莲纹青花碗</strong>
         <div class="dr-gallery-token">Token: 0xD4B21...</div>
         <span class="dr-gallery-status">✓ 已确权</span>
       </div>
