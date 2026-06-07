@@ -1,0 +1,9 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="huiwen" width="60" height="60" patternUnits="userSpaceOnUse">
+      <rect width="60" height="60" fill="#f3e8d2"/>
+      <path d="M10 10h40v40h-30v-20h10v10h10v-20h-30z" fill="none" stroke="#c5ab85" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="300" height="300" fill="url(#huiwen)"/>
+</svg>

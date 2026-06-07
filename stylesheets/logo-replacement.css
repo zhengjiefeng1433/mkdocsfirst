@@ -1,0 +1,25 @@
+/* Keep logo icon on the left, replace site title text with image on the right */
+.md-header__title {
+  min-width: 300px;
+}
+
+.md-header__ellipsis {
+  display: flex;
+  align-items: center;
+}
+
+.md-header__topic:first-child {
+  font-size: 0;
+  line-height: 0;
+  width: min(56vw, 420px);
+  height: 2rem;
+  background-image: url("../assets/logo-text.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+/* Override existing subtitle pseudo-element from extra.css */
+.md-header__topic:first-child::after {
+  content: none;
+}
